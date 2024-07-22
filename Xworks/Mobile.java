@@ -1,0 +1,6 @@
+class Mobile
+{
+  class Camera
+{
+}
+}
