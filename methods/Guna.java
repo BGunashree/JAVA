@@ -1,8 +1,23 @@
 class Guna
 {
+	int i=1;
+	/*Guna(int i)
+	{
+		i=i;
+		System.out.println(i);
+	}
+	void print()
+	{
+		System.out.println("hi");
+	}
+	void display()
+	{
+		System.out.println(i);
+		print();
+	}*/
 	public static void main(String[] args)
 	{
-		int one=1;
+		/*int one=0;
 		int two=1;
 		int latest;
 		int n=5;
@@ -21,6 +36,14 @@ class Guna
 				
 			}
 			System.out.println();
-		}
+		}*/
+		int i;
+		System.out.println(i);
+		/*String a="HELLO";
+		String b="HELLO";
+		boolean c=a.equals(b);
+		System.out.println(c);*/
+	    //Guna guna=new Guna(2);
+		//guna.display();
 	}
 }
