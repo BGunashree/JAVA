@@ -1,0 +1,25 @@
+package com.xworkz.datatyes;
+
+import com.xworkz.datatyes.things.Hat;
+import com.xworkz.datatyes.things.Rajkumar;
+import com.xworkz.datatyes.things.Upendra;
+import com.xworkz.datatyes.things.Yash;
+
+public class HatRunner {
+
+	public static void main(String[] args) {
+	Upendra upendra=new Upendra();
+	upendra.wear();
+	Yash yash=new Yash();
+	Hat hat=new Hat();
+	yash.tear(hat);
+	Rajkumar rajkumar=new Rajkumar();
+	rajkumar.hat=new Hat();
+	
+	rajkumar.fold();
+	
+	
+
+	}
+
+}
