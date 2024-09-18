@@ -1,0 +1,17 @@
+package com.xworkz.interfaces.rule.implement;
+
+import com.xworkz.interfaces.rule.MallRule;
+import com.xworkz.interfaces.rule.PGRule;
+
+public class MallRuleImpl implements MallRule{
+	
+	public boolean validId()
+	{
+		System.out.println("running validId in mallrule impl");
+		return true;
+	}
+	
+	
+	
+
+}

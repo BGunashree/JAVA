@@ -1,0 +1,35 @@
+package com.xworkz.interfaces.rule.runner;
+
+import com.xworkz.interfaces.rule.HospitalRule;
+import com.xworkz.interfaces.rule.TrafficRule;
+import com.xworkz.interfaces.rule.implement.AsterHospitalRule;
+import com.xworkz.interfaces.rule.implement.CityTraffic;
+
+public class RulesRunner {
+
+	public static void main(String[] args) {
+		
+		
+		HospitalRule hospitalrule=new 	AsterHospitalRule();
+		hospitalrule.followVisitingHours();
+		hospitalrule.maintainSilence();
+		hospitalrule.sanitizeHands();
+		System.out.println("-----------------------------------------------");
+		
+		TrafficRule trafficRule=new CityTraffic();
+		trafficRule.avoidDrinkAndDrive();
+		trafficRule.avoidMobileUsage();
+		trafficRule.avoidOvertakingInCrowdedAreas();
+		trafficRule.driveWithinRoadCapacity();
+		trafficRule.followLaneDiscipline();
+		trafficRule.followSpeedLimits();
+		trafficRule.maintainDistance();
+		trafficRule.obeyTrafficSignals();
+		trafficRule.parkOnlyInDesignatedAreas();
+		trafficRule.respectTrafficPolice();
+		System.out.println("-----------------------------------------------");
+		
+
+	}
+
+}

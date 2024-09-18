@@ -1,0 +1,10 @@
+package com.xworkz.chaining;
+
+public class WristWatch extends Watch {
+	
+	public WristWatch()
+	{
+		super("black",10000,"SmartWatch");
+	}
+
+}

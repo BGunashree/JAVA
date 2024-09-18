@@ -1,0 +1,13 @@
+package com.xworkz.inheritance;
+
+public class ProviderRunner {
+
+	public static void main(String[] args) {
+		
+		DellProvider dellProvider=new DellProvider("Dell","Mivhael Dell");
+		dellProvider.equals(new DellProvider("Dell","Mivhael Dell"));
+		
+		
+	}
+
+}

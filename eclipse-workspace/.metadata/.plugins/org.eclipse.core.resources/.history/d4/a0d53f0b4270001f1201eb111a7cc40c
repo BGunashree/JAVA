@@ -1,0 +1,12 @@
+package com.xworkz.finalkeyword;
+
+public class SpecsRunner {
+
+	public static void main(String[] args) {
+	
+		Specs spec=new Specs();
+		spec.wear();
+
+	}
+
+}

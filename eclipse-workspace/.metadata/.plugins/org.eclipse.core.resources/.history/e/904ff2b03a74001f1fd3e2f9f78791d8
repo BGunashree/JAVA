@@ -1,0 +1,18 @@
+package com.xworkz.interfaces.rule.runner;
+
+import com.xworkz.interfaces.rule.HospitalRule;
+import com.xworkz.interfaces.rule.implement.AsterHospitalRule;
+
+public class RulesRunner {
+
+	public static void main(String[] args) {
+		
+		
+		HospitalRule hospitalrule=new 	AsterHospitalRule();
+		hospitalrule.followVisitingHours();
+		hospitalrule.maintainSilence();
+		hospitalrule.sanitizeHands();
+
+	}
+
+}

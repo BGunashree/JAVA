@@ -1,0 +1,28 @@
+package com.xworkz.obmethod.runner;
+
+import com.xworkz.obmethod.CreditCard;
+import com.xworkz.obmethod.Jean;
+
+public class JeanRunner {
+
+	static boolean same;
+	public static void main(String[] args) {
+		
+		Jean jean=new Jean(30,"straight fit","female");
+		Jean jean1=new Jean(30,"straight fit","female");
+		same=jean.equals(jean1);
+		System.out.println("are the instances same :"+same);
+		
+		
+		
+		CreditCard card=new CreditCard(2029,"gunashree",1743);
+		CreditCard card1=new CreditCard(2026,"Akshay",1256);
+	    same=card.equals(card1);
+		System.out.println("card is same as card1 :"+same);
+		CreditCard card2=new CreditCard(2029,"gunashree",1743);
+		CreditCard card3=new CreditCard(2029,"gunashree",1743);
+		same=card2.equals(card3);
+		System.out.println("are the instances same :"+same);
+	}
+
+}

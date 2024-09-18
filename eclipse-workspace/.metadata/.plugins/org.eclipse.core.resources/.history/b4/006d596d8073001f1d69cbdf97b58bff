@@ -1,0 +1,136 @@
+package com.xworkz.inheritance;
+
+public class ProviderRunner {
+
+	static boolean same;
+	public static void main(String[] args) {
+		
+		DellProvider dellProvider=new DellProvider("Dell","Mivhael Dell");
+		same=dellProvider.equals(new DellProvider("Dell"," Dell"));
+		System.out.println(same);
+		dellProvider.service();
+		System.out.println("------------------------------------------------------------------");
+		
+        InternetProvider internetProvider=new InternetProvider("Jio", "Mukesh Ambani");
+	    same=internetProvider.equals(new InternetProvider("Airtel","Gopal Vittal"));
+		System.out.println(same);
+		System.out.println(internetProvider);
+		internetProvider.service();
+		System.out.println("------------------------------------------------------------------");
+		
+		MovieBookingProvider movieBookingProvider=new MovieBookingProvider("BookMyShow", "Ashish");
+		System.out.println(movieBookingProvider);
+		same=movieBookingProvider.equals(movieBookingProvider);
+		System.out.println(same);
+		movieBookingProvider.service();
+		System.out.println("------------------------------------------------------------------");
+		
+		
+		
+		
+		
+		BookingProvider bookingProvider1 =new BookingProvider("divya", "vikas");
+		BookingProvider bookingProvider2=new BookingProvider("laxmi", "tafseen");
+		
+		boolean store1=bookingProvider2.equals(bookingProvider1);
+		System.out.println(store1);
+		
+		System.out.println(bookingProvider2.toString());
+		
+		bookingProvider1.service();
+	
+		System.out.println("==========================================================");
+		
+		
+		
+		BookMyShow bookMyShow =new BookMyShow(250,"kalpana", "shrikant");
+		
+		boolean store3=bookMyShow.equals(bookMyShow);
+		System.out.println(store3);
+		
+		System.out.println(bookMyShow.toString());
+		
+		bookMyShow.service();
+		
+		
+		System.out.println("========================================================");
+		
+		
+		
+		LenovoProvider lenovoProvider =new LenovoProvider(25, "kushi", "rishi");
+		
+		boolean store5=lenovoProvider.equals(bookMyShow);
+		System.out.println(store5);
+		
+		System.out.println(lenovoProvider.toString());
+
+		lenovoProvider.service();
+		
+		System.out.println("========================================================");
+		
+		
+		
+		System.out.println("========================================================");
+		
+		AirtelInternetProvider airtelInternetProvider =new AirtelInternetProvider("arun", "kiran");
+		
+		boolean store7=airtelInternetProvider.equals(lenovoProvider);
+		System.out.println(store7);
+		
+		System.out.println(airtelInternetProvider.toString());
+
+		airtelInternetProvider.service();
+		
+		System.out.println("========================================================");
+		
+		JioInternetProvider JioInternetProvider=new JioInternetProvider("mamatha", "pooja");
+		
+		boolean store8=JioInternetProvider.equals(airtelInternetProvider);
+		System.out.println(store8);
+		
+		System.out.println(JioInternetProvider.toString());
+
+		JioInternetProvider.service();
+		
+		System.out.println("========================================================");
+		
+		ExtremAirtelInternet extremAirtelInternet=new ExtremAirtelInternet("bhagya", "varun");
+		
+		boolean store9=extremAirtelInternet.equals(airtelInternetProvider);
+		System.out.println(store9);
+		
+		System.out.println(extremAirtelInternet.toString());
+
+		extremAirtelInternet.service();
+		
+		System.out.println("========================================================");
+		
+		Fast5gExtreme fast5gExtreme=new Fast5gExtreme("rani", "vani");
+		
+		boolean store10=fast5gExtreme.equals(fast5gExtreme);
+		System.out.println(store10);
+		
+		System.out.println(fast5gExtreme.toString());
+
+		fast5gExtreme.service();
+		
+		System.out.println("========================================================");
+		
+		SatjioInternetProvider satJioInternetProvider=new SatjioInternetProvider( "JioSatellite", "Mukesh Ambani",1998);
+		
+		boolean store11=satJioInternet.equals(fast5gExtreme);
+		System.out.println(store11);
+		
+		System.out.println(satJioInternet.toString());
+
+		satJioInternet.service();
+		
+		System.out.println("========================================================");
+		
+		BookMyShowMovieBookingProvider bookMyShowMovieBookingProvider=new BookMyShowMovieBookingProvider("abc","cde",6);
+		
+		same=bookMyShowMovieBookingProvider.equals( new BookMyShowMovieBookingProvider("abc","cde",6));
+		System.out.println(same);
+	}
+
+}

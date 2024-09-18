@@ -1,0 +1,15 @@
+package com.xworkz.inheritance;
+
+public class ProviderRunner {
+
+	static boolean same;
+	public static void main(String[] args) {
+		
+		DellProvider dellProvider=new DellProvider("Dell","Mivhael Dell");
+		same=dellProvider.equals(new DellProvider("Dell"," Dell"));
+		System.out.println(same);
+		
+		
+	}
+
+}

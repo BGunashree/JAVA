@@ -1,0 +1,111 @@
+package com.xworkz.obmethod.runner;
+
+import com.xworkz.obmethod.Gun;
+import com.xworkz.obmethod.Bedsheet;
+import com.xworkz.obmethod.Bulb;
+import com.xworkz.obmethod.Country;
+import com.xworkz.obmethod.CreditCard;
+import com.xworkz.obmethod.Grinder;
+import com.xworkz.obmethod.Helmet;
+import com.xworkz.obmethod.Jean;
+import com.xworkz.obmethod.Kettle;
+import com.xworkz.obmethod.Saree;
+import com.xworkz.obmethod.State;
+
+public class JeanRunner {
+
+	static boolean same;
+	public static void main(String[] args) {
+		
+		Bedsheet bedsheet=new Bedsheet("king size","maroon","cotton");
+		bedsheet.setCost(1000);
+		bedsheet.setDiscount(10);
+		bedsheet.setShopName("gajanand");
+		Bedsheet bedsheet1=new Bedsheet("king size","maroon","cotton");
+		bedsheet1.setCost(1500);
+		bedsheet1.setDiscount(10);
+		bedsheet1.setShopName("prem textiles");
+		same=bedsheet1.equals(bedsheet);
+		System.out.println("are the bedsheet instances same :"+same);
+		System.out.println("------------------------------------------------");
+		
+		Saree saree=new Saree("linen",4000,"black");
+		saree.setLength(5);
+		saree.setWashype("dry clean");
+		saree.setShopName("sudarshan");
+		Saree saree1=new Saree("paper silk",10000,"green");
+		saree1.setLength(6);
+		saree1.setWashype("dry clean");
+		saree1.setShopName("silk udyog");
+		same=saree.equals(saree1);
+		System.out.println("are the saree instances same :"+same);
+		System.out.println("------------------------------------------------");
+		
+		Kettle kettle=new Kettle("prestige",1.5f,"silver");
+		Kettle kettle1=new Kettle("borosil",1.8f,"glass");
+		same=kettle.equals(kettle1);
+		System.out.println("are the kettle instances same :"+same);
+		System.out.println("------------------------------------------------");
+		
+		Grinder grinder=new Grinder("greenchef",5000,2);
+		Grinder grinder1=new Grinder("greenchef",5000,2);
+		same=grinder.equals(grinder1);
+		System.out.println("are the grinder instances same :"+same);
+		System.out.println("------------------------------------------------");
+		
+		Helmet helmet=new Helmet("black","steelbird","full face");
+		Helmet helmet1=new Helmet("black","apache","open face");
+		same=helmet1.equals(helmet);
+		System.out.println("are the state instances same :"+same);
+		System.out.println("------------------------------------------------");
+		
+		State state=new State("India","Karnataka","Bengaluru");
+		State state1=new State("India","Tamil Nadu","Chennai");
+		same=state1.equals(state);
+		System.out.println("are the state instances same :"+same);
+		System.out.println("------------------------------------------------");
+		
+		
+		Country country=new Country("Asia","India","New Delhi");
+		Country country1=new Country("Asia","India","New Delhi");
+		same=country.equals(country1);
+		System.out.println("are the country instances same :"+same);
+		System.out.println("------------------------------------------------");
+		
+		Jean jean=new Jean(30,"straight fit","female");
+		Jean jean1=new Jean(30,"straight fit","female");
+		same=jean.equals(jean1);
+		System.out.println("are the jean instances same :"+same);
+		System.out.println("------------------------------------------------");
+		
+		Bulb bulb=new Bulb("philips",200,20);
+		Bulb bulb1=new Bulb("Crompton",570,12);
+		same=bulb.equals(bulb1);
+		System.out.println("are the bulb instances same :"+same);
+		System.out.println("------------------------------------------------");
+		
+		Gun gun=new Gun(1000,"India","Pistol");
+		Gun gun1=new Gun(1000,"India","Pistol");
+		same=gun.equals(gun1);
+		System.out.println("are the gun instances same :"+same);
+		System.out.println("------------------------------------------------");
+		
+		CreditCard card=new CreditCard(2029,"gunashree",1743);
+		CreditCard card1=new CreditCard(2026,"Akshay",1256);
+	    same=card.equals(card1);
+	    card.setBank("hdfc");
+	    card.setColor("blue");
+	    card.setType("visa");
+	    card1.setBank("kotak");
+	    card1.setColor("red");
+	    card1.setType("mastercard");
+	    
+	    
+		System.out.println("card is same as card1 :"+same);
+		CreditCard card2=new CreditCard(2029,"gunashree",1743);
+		CreditCard card3=new CreditCard(2029,"gunashree",1743);
+		same=card2.equals(card3);
+		System.out.println("are the credit card instances same :"+same);
+	}
+
+}

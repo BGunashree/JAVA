@@ -1,0 +1,28 @@
+package com.xworkz.inheritance;
+
+public class BookMyShowMovieBookingProvider extends MovieBookingProvider {
+	
+	public int totalHalls;
+	public BookMyShowMovieBookingProvider(String name,Strng ceoName) {
+		super(name,ceoName);
+		this.totalHalls=totalHalls;
+		
+	}
+	
+	
+	
+	public void book()
+	{
+		System.out.println("running book in MovieBookingProvider");
+	}
+	public void cancel()
+	{
+		System.out.println("running cancel in MovieBookingProvider");
+	}
+	@Override
+	public void service()
+	{
+		System.out.println("running service in MovieBookingProvider ");
+	}
+
+}

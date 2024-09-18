@@ -1,0 +1,21 @@
+package com.xworkz.chaining;
+
+public class Watch {
+	
+	String type;
+	String material;
+	double cost;
+	public Watch(String type)
+	{
+		super();
+		this.type=type;
+	}
+	public Watch(String material,double cost,String type)
+	{
+		this(type);
+		this.material=material;
+		this.cost=cost;
+	}
+	
+
+}

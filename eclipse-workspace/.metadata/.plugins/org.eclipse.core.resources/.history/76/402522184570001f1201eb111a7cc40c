@@ -1,0 +1,8 @@
+package com.xworkz.chaining;
+
+public class WatchRunner {
+
+	
+	WristWatch wristWatch=new WristWatch("Analog");
+	
+}

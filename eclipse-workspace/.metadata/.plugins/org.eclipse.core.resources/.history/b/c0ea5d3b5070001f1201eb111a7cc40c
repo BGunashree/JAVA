@@ -1,0 +1,19 @@
+package com.xworkz.blocks;
+
+public class VehicleRunner {
+
+	public static void main(String[] args) {
+		
+		Vehicle.type="air";
+		Vehicle vehicle=new Vehicle("Car");
+		vehicle.drive();
+		
+		vehicle.display();
+		
+		Vehicle vehicle1=new Vehicle("Car");
+		
+		vehicle1.display();
+
+	}
+
+}

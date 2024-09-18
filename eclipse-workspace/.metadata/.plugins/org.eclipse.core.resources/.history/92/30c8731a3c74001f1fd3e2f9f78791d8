@@ -1,0 +1,56 @@
+package com.xworkz.interfaces.rule.runner;
+
+import com.xworkz.interfaces.rule.BankRule;
+import com.xworkz.interfaces.rule.HospitalRule;
+import com.xworkz.interfaces.rule.TrafficRule;
+import com.xworkz.interfaces.rule.implement.AsterHospitalRule;
+import com.xworkz.interfaces.rule.implement.CityTraffic;
+import com.xworkz.interfaces.rule.implement.KotakBankRule;
+
+public class RulesRunner {
+
+	public static void main(String[] args) {
+		
+		
+		HospitalRule hospitalrule=new 	AsterHospitalRule();
+		hospitalrule.followVisitingHours();
+		hospitalrule.maintainSilence();
+		hospitalrule.sanitizeHands();
+		System.out.println("-----------------------------------------------");
+		
+		TrafficRule trafficRule=new CityTraffic();
+		trafficRule.avoidDrinkAndDrive();
+		trafficRule.avoidMobileUsage();
+		trafficRule.avoidOvertakingInCrowdedAreas();
+		trafficRule.driveWithinRoadCapacity();
+		trafficRule.followLaneDiscipline();
+		trafficRule.followSpeedLimits();
+		trafficRule.maintainDistance();
+		trafficRule.obeyTrafficSignals();
+		trafficRule.parkOnlyInDesignatedAreas();
+		trafficRule.respectTrafficPolice();
+		System.out.println("-----------------------------------------------");
+		
+		BankRule bankRule=new KotakBankRule();
+		bankRule.avoidFraudulentActivities();
+		bankRule.avoidLoudConversations();
+		bankRule.avoidMobileUsage();
+		bankRule.avoidSharingPINs();
+		bankRule.carryValidID();
+		bankRule.cooperateWithBankStaff();
+		bankRule.followAccountOpeningRules();
+		bankRule.followLoanRules();
+		bankRule.keepTrackOfTransactions();
+		bankRule.maintainConfidentiality();
+		bankRule.maintainQueue();
+		bankRule.respectBankTimings();
+		bankRule.respectOtherCustomersPrivacy();
+		bankRule.signDocumentsCorrectly();
+		bankRule.useOnlineBankingForBasicTasks();
+		System.out.println("---------------------------------------------------");
+		
+		
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.xworkz.inheritance;
+
+import java.time.LocalDate;
+
+public class SatjioInternetProvider extends InternetProvider {
+	
+	LocalDate date;
+	public SatjioInternetProvider(String name,String ceoName,LocalDate date) {
+		super(name,ceoName);
+		this.date=date;
+	}
+	
+
+}

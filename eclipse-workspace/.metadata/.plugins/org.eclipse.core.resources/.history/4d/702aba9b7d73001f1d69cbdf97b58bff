@@ -1,0 +1,19 @@
+package com.xworkz.inheritance;
+
+import java.time.LocalDate;
+
+public class SatjioInternetProvider extends JioInternetProvider {
+	
+	LocalDate date;
+	public SatjioInternetProvider(String name,String ceoName,LocalDate date) {
+		super(name,ceoName);
+		this.date=date;
+	}
+	@Override
+	public void service()
+	{
+		System.out.println("running service in SatjioInternetProvider ");
+	}
+	
+
+}

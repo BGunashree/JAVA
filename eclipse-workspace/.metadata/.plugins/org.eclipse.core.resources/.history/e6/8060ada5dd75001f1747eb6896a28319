@@ -1,0 +1,51 @@
+package com.xworkz.interfaces.rule.runner;
+
+import java.time.LocalDate;
+
+import com.xworkz.interfaces.rule.DrivingLicence;
+import com.xworkz.interfaces.rule.Guest;
+import com.xworkz.interfaces.rule.MallRule;
+import com.xworkz.interfaces.rule.PGRule;
+import com.xworkz.interfaces.rule.SecurityCheck;
+import com.xworkz.interfaces.rule.TrafficRules;
+import com.xworkz.interfaces.rule.implement.BalajiPGRule;
+import com.xworkz.interfaces.rule.implement.CityTrafficRules;
+import com.xworkz.interfaces.rule.implement.RmzMallRuleImpl;
+
+public class PgRuleRunner {
+
+	public static void main(String[] args) {
+		
+		PGRule pgRule=new BalajiPGRule();
+		Guest guest=new Guest(pgRule);
+		guest.pay();
+		
+		TrafficRules trafficRules=new CityTrafficRules();
+		DrivingLicence drivingLicence=new DrivingLicence(trafficRules);
+		drivingLicence.check();
+		
+		MallRule mallRule=new RmzMallRuleImpl();
+		SecurityCheck securityCheck=new SecurityCheck(mallRule);
+		securityCheck.validate();
+		
+		RmzMallRuleImpl rmz=(RmzMallRuleImpl)mallRule;
+		rmz.date=LocalDate.of(2002,02 , 06);
+		
+		short a=9;
+		
+		System.out.println((int)a);
+	    System.out.println((short)8);
+	    StringBuffer sb=new StringBuffer();
+	    sb.append("hello");
+	    System.out.println(sb);
+	    System.out.println(guest);
+	    
+	    LocalDate ld= LocalDate.of(2002,06,02);
+	    LocalDate date = LocalDate.ofEpochDay(18269);
+	    System.out.println(date);
+	    
+	    
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.xworkz.reading;
+
+public class Person {
+	
+	String name;
+    String email;
+	 long number;
+	
+	
+	
+	public Person(String name, String email, long number) {
+		super();
+		this.name = name;
+		this.email = email;
+		this.number = number;
+	}
+	
+	public void show()
+	{
+		System.out.println(name);
+		System.out.println(email);
+		System.out.println(number);
+		System.out.println("-----------------------------------------------");
+	}
+
+
+}

@@ -1,0 +1,47 @@
+package com.xworkz.datatyes.things;
+
+public  abstract class TV {
+
+	public String name;
+	public double cost;
+	public TV(String name, double cost) {
+		super();
+		this.name = name;
+		this.cost = cost;
+	}
+	@Override
+	public boolean equals(Object obj) {
+
+
+		if(obj!=null)
+		{
+			System.out.println(this.cost);
+			if(obj instanceof SonyaiTV )
+			{
+				SonyaiTV casted=(SonyaiTV)obj;
+				System.out.println(casted.cost);
+				if(this.cost==casted.cost && this.name.equals(casted.name) )
+				{
+					return true;
+				}
+				
+				
+			}
+			else
+			{
+				System.out.println("obj not of ----instance ");
+			}
+		}
+		else
+		{
+			System.out.println("null");
+		}
+		return super.equals(obj);
+	}
+	@Override
+	public String toString() {
+		return "TV [name=" + name + ", cost=" + cost + "]";
+	}
+	
+	
+}

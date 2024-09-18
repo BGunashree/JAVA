@@ -1,0 +1,40 @@
+package com.xworkz.reading;
+
+public class Person {
+	
+	String name;
+    String email;
+	 long number;
+	static int index=0;
+	static Person[5] persons;
+	
+	
+	public Person(String name, String email, long number) {
+		super();
+		this.name = name;
+		this.email = email;
+		this.number = number;
+	}
+	
+	public static void store(Person obj)
+	{
+		if(obj!=null)
+		{
+			persons[index]=obj;
+			index++;
+		}
+		else
+		{
+			System.out.println("obj is null");
+		}
+	}
+	public static void display()
+	{
+		for(Person x:persons )
+		{
+			System.out.println(x);
+		}
+	}
+
+
+}

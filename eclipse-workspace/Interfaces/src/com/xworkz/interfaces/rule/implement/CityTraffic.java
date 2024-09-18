@@ -1,0 +1,99 @@
+package com.xworkz.interfaces.rule.implement;
+
+import com.xworkz.interfaces.rule.TrafficRule;
+
+public class CityTraffic implements TrafficRule {
+
+	@Override
+	public void stopAtRedLight() {
+		
+		
+		System.out.println("Stopped at red light.");
+	}
+
+	@Override
+	public void wearHelmet() {
+		
+		System.out.println("Helmet worn.");
+	}
+
+	@Override
+	public void wearSeatBelt() {
+		
+		
+		System.out.println("Seat belt worn.");
+	}
+
+	@Override
+	public void followSpeedLimits() {
+		System.out.println("Speed limits followed.");
+	}
+
+	@Override
+	public void obeyTrafficSignals() {
+		
+		System.out.println("Traffic signals obeyed.");
+	}
+
+	@Override
+	public void yieldToPedestrians() {
+		
+		System.out.println("Yielded to pedestrians.");
+	}
+
+	@Override
+	public void avoidMobileUsage() {
+		
+		System.out.println("Mobile phone usage avoided.");
+	}
+
+	@Override
+	public void avoidDrinkAndDrive() {
+		
+		System.out.println("No drinking and driving.");
+	}
+
+	@Override
+	public void followLaneDiscipline() {
+		
+		System.out.println("Lane discipline followed.");
+	}
+
+	@Override
+	public void respectTrafficPolice() {
+	
+		System.out.println("Respect for traffic police.");
+	}
+
+	@Override
+	public void avoidOvertakingInCrowdedAreas() {
+		
+		System.out.println("Avoided overtaking.");
+	}
+
+	@Override
+	public void stopForSchoolBuses() {
+		
+		System.out.println("Stopped for school buses.");
+	}
+
+	@Override
+	public void parkOnlyInDesignatedAreas() {
+		
+		System.out.println("Parked in designated areas.");
+	}
+
+	@Override
+	public void driveWithinRoadCapacity() {
+		
+		System.out.println("Driving within road capacity.");
+	}
+
+	@Override
+	    public void maintainDistance() 
+	{
+		System.out.println("Distance maintained."); 
+	
+	}
+
+}

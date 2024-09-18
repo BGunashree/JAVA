@@ -1,0 +1,11 @@
+package com.xworkz.interfaces.rule.implement;
+
+public class KACricketRule {
+	
+	
+	void powerPlay()
+	{
+		System.out.println("running power play in KACricketRule");
+	}
+
+}

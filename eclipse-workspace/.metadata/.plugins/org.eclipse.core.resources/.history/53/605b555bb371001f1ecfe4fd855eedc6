@@ -1,0 +1,7 @@
+package com.xworkz.datatyes.things;
+
+public class SonyTV extends TV{
+	
+	
+
+}

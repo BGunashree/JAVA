@@ -1,0 +1,22 @@
+package com.xworkz.array;
+
+public class LargestElement {
+
+	public static void main(String[] args) {
+		
+		int[] a= {10,5,7,9,20};
+		int max=a[0];
+		System.out.println(a.length);
+		for(int i=0;i<a.length;i++)
+		{
+			if(max<a[i])
+			{
+				max=a[i];
+			}
+		}
+		System.out.println(max);
+		
+
+	}
+
+}

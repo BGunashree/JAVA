@@ -1,0 +1,23 @@
+package com.xworkz.datatyes;
+
+
+import com.xworkz.datatyes.things.LgTV;
+import com.xworkz.datatyes.things.SonyTV;
+import com.xworkz.datatyes.things.SonyaiTV;
+
+
+public class TVRunner {
+
+	public static void main(String[] args) {
+		
+		LgTV lg=new LgTV("abc",4,0);
+		SonyaiTV stv=new SonyaiTV("abc",4,9);
+		
+	
+		boolean same=lg.equals(new LgTV("abc",4,0));
+		System.out.println(same);
+		
+		
+	}
+
+}

@@ -1,0 +1,35 @@
+package com.xworkz.interfaces.rule.runner;
+
+import com.xworkz.interfaces.rule.DrivingLicence;
+import com.xworkz.interfaces.rule.Guest;
+import com.xworkz.interfaces.rule.MallRule;
+import com.xworkz.interfaces.rule.PGRule;
+import com.xworkz.interfaces.rule.SecurityCheck;
+import com.xworkz.interfaces.rule.TrafficRules;
+import com.xworkz.interfaces.rule.implement.BalajiPGRule;
+import com.xworkz.interfaces.rule.implement.CityTrafficRules;
+import com.xworkz.interfaces.rule.implement.RmzMallRuleImpl;
+
+public class PgRuleRunner {
+
+	public static void main(String[] args) {
+		
+		PGRule pgRule=new BalajiPGRule();
+		Guest guest=new Guest(pgRule);
+		guest.pay();
+		
+		TrafficRules trafficRules=new CityTrafficRules();
+		DrivingLicence drivingLicence=new DrivingLicence(trafficRules);
+		drivingLicence.check();
+		
+		MallRule mallRule=new RmzMallRuleImpl();
+		SecurityCheck securityCheck=new SecurityCheck(mallRule);
+		securityCheck.validate();
+		
+		String name="gunashree";
+		System.out.println(name.compareToIgnoreCase("gunasree"));
+		
+
+	}
+
+}

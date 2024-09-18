@@ -1,0 +1,18 @@
+package com.xworkz.interfaces.rule.runner;
+
+import com.xworkz.interfaces.rule.Guest;
+import com.xworkz.interfaces.rule.PGRule;
+import com.xworkz.interfaces.rule.implement.BalajiPGRule;
+
+public class PgRuleRunner {
+
+	public static void main(String[] args) {
+		
+		PGRule pgRule=new BalajiPGRule();
+		Guest guest=new Guest(pgRule);
+		guest.pay();
+		
+
+	}
+
+}

@@ -1,0 +1,72 @@
+package com.xworkz.interfaces.rule.implement;
+
+import com.xworkz.interfaces.rule.BankRule;
+
+public class KotakBankRule implements BankRule {
+
+	@Override
+	public void maintainQueue() {
+		System.out.println("Queue maintained.");
+	}
+
+	@Override
+	public void avoidMobileUsage() {
+		System.out.println("Mobile usage avoided.");
+	}
+
+	@Override
+	public void carryValidID() {
+		System.out.println("Valid ID carried.");
+	}
+
+	@Override
+	public void signDocumentsCorrectly() {
+		System.out.println("Documents signed correctly.");
+	}
+
+	@Override
+	public void maintainConfidentiality() {
+		System.out.println("Confidentiality maintained.");
+	}
+
+	@Override
+	public void avoidFraudulentActivities() {
+		System.out.println("Fraudulent activities avoided.");
+	}
+
+	@Override
+	public void respectBankTimings() {
+		System.out.println("Bank timings respected.");
+	}
+
+	@Override
+	public void cooperateWithBankStaff() {
+		System.out.println("Cooperated with bank staff.");
+	}
+	
+	public void avoidLoudConversations() {
+		System.out.println("avoid Loud Conversations.");
+	}
+
+	public void followLoanRules() {
+		System.out.println("follow LoanRules.");
+	}
+
+	public void followAccountOpeningRules() {
+		System.out.println("follow Account OpeningRules.");
+	}
+
+	public void keepTrackOfTransactions() {
+		System.out.println("keep Track Of Transactions");
+	}
+
+	public void useOnlineBankingForBasicTasks() {
+		System.out.println("use Online Banking For Basic Tasks.");
+	}
+
+	public void avoidSharingPINs() {
+		System.out.println("avoid Sharing PINs.");
+	}
+
+
+}

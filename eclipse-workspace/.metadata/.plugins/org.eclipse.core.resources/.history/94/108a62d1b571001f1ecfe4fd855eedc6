@@ -1,0 +1,11 @@
+package com.xworkz.datatyes.things;
+
+public class SonyaiTV extends SonyTV{
+	
+	public SonyaiTV(String name,double cost) {
+		
+		
+		super(name,cost);
+	}
+
+}

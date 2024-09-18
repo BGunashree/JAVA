@@ -1,0 +1,31 @@
+package com.xworkz.datatyes;
+
+
+import com.xworkz.datatyes.things.LgTV;
+import com.xworkz.datatyes.things.SonyTV;
+import com.xworkz.datatyes.things.SonyaiTV;
+
+
+public class TVRunner {
+
+	public static void main(String[] args) {
+		
+		LgTV lg=new LgTV("abc",4,0);
+		SonyaiTV stv=new SonyaiTV("abc",4,9);
+		SonyTV sony=new SonyTV("abc",9);
+		Object obj=lg;
+		
+		if(obj instanceof LgTV )
+		{
+			System.out.println("yes");
+		}
+		else
+		{
+			System.out.println("no");
+		}
+	
+		
+		
+	}
+
+}

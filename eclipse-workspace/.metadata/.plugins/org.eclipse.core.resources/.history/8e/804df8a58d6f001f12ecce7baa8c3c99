@@ -1,0 +1,16 @@
+package com.xworkz.obmethod.runner;
+
+import com.xworkz.obmethod.CreditCard;
+
+public class JeanRunner {
+
+	public static void main(String[] args) {
+		
+		
+		CreditCard card=new CreditCard(2029,"gunashree",1743);
+		CreditCard card1=new CreditCard(2026,"Akshay",1256);
+		boolean same=card.equals(card1);
+		System.out.println("card is same as card1 :"+same);
+	}
+
+}

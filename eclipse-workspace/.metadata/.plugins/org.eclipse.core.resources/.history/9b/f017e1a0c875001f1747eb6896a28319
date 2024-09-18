@@ -1,0 +1,18 @@
+package com.xworkz.interfaces.rule.runner;
+
+import com.xworkz.interfaces.rule.DrivingLicence;
+import com.xworkz.interfaces.rule.TrafficRules;
+import com.xworkz.interfaces.rule.implement.CityTrafficRules;
+
+public class TrafficRulesRunner {
+
+	public static void main(String[] args) {
+		
+		TrafficRules trafficRules=new CityTrafficRules();
+		DrivingLicence drivingLicence=new DrivingLicence(trafficRules);
+		drivingLicence.check();
+	
+
+	}
+
+}

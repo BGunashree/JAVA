@@ -1,0 +1,26 @@
+package com.xworkz.array;
+
+public class AdditionOf2Matrix {
+
+	public static void main(String[] args) {
+		
+		
+		int a[][]= {
+				{1,2,3},
+				{1,2,3}};
+		int b[][]= {
+				{1,2,3},
+				{1,2,3}};
+		int sum[][]=new int(2)(3);
+		
+		for(int i[]:a)
+		{
+			for(int j:i)
+			{
+				
+			}
+		}
+		}
+	}
+
+

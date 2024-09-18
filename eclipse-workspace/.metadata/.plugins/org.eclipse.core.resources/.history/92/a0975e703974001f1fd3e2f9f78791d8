@@ -1,0 +1,10 @@
+package com.xworkz.interfaces.rule.runner;
+
+public class RulesRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.xworkz.interfaces.rule;
+
+public class Guest {
+	
+	PGRule pgrule;
+	public Guest(PGRule pgrule) {
+		this.pgrule=pgrule;
+	}
+	public pay()
+	{
+		if(pgrule!=null)
+		{
+			pgrule.costPerMonth();
+			pgrule.wifi();
+			
+		}
+		else
+		{
+			System.out.println("pgrule is null");
+		}
+	}
+
+}
