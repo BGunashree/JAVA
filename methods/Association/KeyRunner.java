@@ -11,12 +11,12 @@ class KeyRunner
 		keybunch1.display();
 		
 		Clip clip=new Clip("black","Butterfly");
-		Ganavi ganavi=new Ganavi("gunashreeb@gmail.com",clip);
+		Ganavi ganavi=new Ganavi("gunashreeb@gmail.com");
 		ganavi.display();
 		
-		Clip clip1=new Clip("white","claw");
+		/*Clip clip1=new Clip("white","claw");
 		Ganavi ganavi1=new Ganavi("bgunashree366@gmail.com",clip1);
-		ganavi1.display();
+		ganavi1.display();*/
 		
 		Knife knife=new Knife(50,15);
 		Ananya ananya=new Ananya(8951133425L,knife);

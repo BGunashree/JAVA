@@ -1,11 +1,11 @@
 class Ganavi
 {
 	String email;
-	Clip clip;
-	Ganavi(String email,Clip clip)
+	Clip clip=new Clip("red","clawww");
+	Ganavi(String email)
 	{
 		this.email=email;
-		this.clip=clip;
+		//this.clip=clip;
 	}
 	public void display()
 	{
