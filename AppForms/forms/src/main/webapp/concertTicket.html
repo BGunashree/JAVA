@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Concert Ticket</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container mt-5">
+
+<h1><i>Cricket Ticket Form</i></h1>
+<form action="cbook" method=post>
+<div class="mb-3">
+				<label for="location" class="form-label">location</label> <input type="text"
+					name="location" class="form-control" id="location">
+			</div>
+<div class="mb-3">
+				<label for="name" class="form-label">artist name</label> <input type="text"
+					name="name" class="form-control" id="name">
+			</div>
+
+<div class="mb-3">
+				<label for="ttype" class="form-label">ticket type</label> <select class="form-select"  name="ttype" id="ttype">
+                <option selected>Select ticket Type</option>
+           
+                <option value="2">general</option>
+                <option value="3">reserved</option>
+                <option value="4">early bird</option>
+            </select>
+			</div>
+
+<div class="mb-3">
+				<label for="ticket" class="form-label">no of Ticket</label> <input type="number"
+					name="ticket" class="form-control" id="ticket">
+			</div>
+
+<div class="mb-3">
+				<label for="ptype" class="form-label">Preference type</label> <input type="text"
+					name="ptype" class="form-control" id="ptype">
+			</div>
+
+
+
+
+			<button type="submit" class="btn btn-success">Book</button>
+
+</form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
