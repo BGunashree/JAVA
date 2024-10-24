@@ -1,7 +1,7 @@
 class Claw
 {
 	String type="clip";
-	double cost=200;
+	double cost;
 	String material;
 	public Claw()
 	{

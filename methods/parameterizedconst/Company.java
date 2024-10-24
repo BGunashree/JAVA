@@ -12,9 +12,9 @@ class Company
 	}
 	public void display()
 	{
-		System.out.println("id: "+id);
-		System.out.println("name: "+name);
-		System.out.println("location: "+location);
+		System.out.println("id: "+this.id);
+		System.out.println("name: "+this.name);
+		System.out.println("location: "+this.location);
 		softwareEngineer.display();
 	}
 }
